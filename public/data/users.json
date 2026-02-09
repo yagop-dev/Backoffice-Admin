@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Matheus Multidrop",
+    "email": "matheus@multidrop.com",
+    "role": "admin",
+    "country": "Brazil",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "name": "Carlos Silva",
+    "email": "carlos@email.com",
+    "role": "customer",
+    "country": "EUA",
+    "status": "inactive"
+  }
+]
