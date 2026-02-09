@@ -27,13 +27,41 @@ npm run dev
 ## 📁 Estrutura do projeto
 
 src/
-├── components/ # Componentes reutilizáveis (Header, Loading, Error, Tables, etc)
-├── pages/ # Páginas da aplicação (Dashboard, Users, Orders, Commissions)
-├── services/ # Camada de acesso a dados (fetchData)
-├── utils/ # Funções utilitárias (estatísticas e cálculos)
-├── types/ # Tipagens TypeScript
-├── data/ # JSONs simulando backend
-└── App.tsx # Configuração de rotas e layout principal
+├── components/
+│   ├── Header.tsx
+│   ├── Loading.tsx
+│   ├── ErrorMessage.tsx
+│   ├── OrdersList.tsx
+│   ├── OrdersFilters.tsx
+│   ├── CommissionsList.tsx
+│   └── ui/                # Componentes do shadcn/ui
+│
+├── pages/
+│   ├── DashboardPage.tsx
+│   ├── UsersPage.tsx
+│   ├── UserDetailPage.tsx
+│   ├── OrdersPage.tsx
+│   ├── OrderDetailPage.tsx
+│   └── CommissionsPage.tsx
+│
+├── services/
+│   └── api.ts             # Camada de acesso a dados (fetch)
+│
+├── utils/
+│   └── stats.ts           # Funções utilitárias (cálculos e estatísticas)
+│
+├── types/
+│   ├── user.ts
+│   ├── order.ts
+│   └── commission.ts
+│
+├── data/
+│   ├── users.json
+│   ├── orders.json
+│   └── commissions.json   # JSONs simulando backend
+│
+├── App.tsx                # Configuração de rotas e layout principal
+└── main.tsx
 
 ---
 
